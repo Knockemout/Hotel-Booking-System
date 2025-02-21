@@ -22,7 +22,6 @@ header {
     font-size: 12px;
 }
 
-/* Navigation */
 .header {
     display: flex;
     justify-content: space-between;
@@ -47,7 +46,7 @@ header {
     color: #8b5cf6;
 }
 
-/* Booking Button */
+
 .sub-header button {
     background-color: #8b5cf6;
     color: white;
@@ -63,7 +62,62 @@ header {
     background-color: #6a46c1;
 }
 
-/* Sections Styling */
+
+
+
+
+
+.list-room, .services {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+
+
+.list-of-rooms, .sub-services {
+    display: flex;
+    overflow-x: auto;
+    gap: 15px;
+    padding: 20px;
+    scroll-snap-type: x mandatory;
+    white-space:nowrap;
+}
+
+.room-components, .component-of-service {
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+    text-align: center;
+    flex: 0 0 auto;
+    width: 250px;
+    scroll-snap-align:start;
+}
+
+.room-components:hover, .component-of-service:hover {
+    transform: translateY(-5px);
+}
+
+.rooms-image, .img-service {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.title {
+    font-size: 15px;
+    color: #444;
+    margin-top: 10px;
+}
+
+
+
+
+
+
+
 .intro, .about, .services, .Hotel-team,.list-room, .contact-us, .guest-rate {
     padding: 50px 10%;
     background-color: white;
@@ -72,53 +126,97 @@ header {
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Team Section */
 .Hotel-team {
     text-align: center;
 }
 
 .team-img {
-    display: inline-block;
-    margin: 10px;
+    display:inline-block;
+    margin: 5px;
 }
 
 .team-img img, .guest-profile img {
-    width: 150px;
-    height: 150px;
+    width: 110px;
+    height: 110px;
     border-radius: 50%;
     object-fit: cover;
     border: 3px solid #8b5cf6;
 }
 
-/* Contact Form */
+
 form {
+    align-items: center;
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 8px;
     background: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    width: 100%;
 }
 
+
 form input, form textarea {
-    width: 100%;
-    padding: 10px;
+    
+    width: 80%;
+    padding: 12px;
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
+
+form input:focus, form textarea:focus {
+    border-color: #8b5cf6;
+    box-shadow: 0 0 8px rgba(139, 92, 246, 0.5);
+    outline: none;
+}
+
+
+form textarea {
+    resize: vertical;
+    min-height: 60px;
+}
+
 
 form input[type="submit"] {
     background-color: #8b5cf6;
+    width: 30%;
     color: white;
     border: none;
     cursor: pointer;
-    transition: 0.3s;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-size: 16px;
+    padding: 12px;
+    border-radius: 8px;
 }
 
 form input[type="submit"]:hover {
     background-color: #6a46c1;
+    transform: translateY(-2px);
 }
+
+
+form label {
+    font-size: 15px;
+    color: #333;
+    font-weight: bold;
+}
+
+
+form input::placeholder, form textarea::placeholder {
+    color: #999;
+    font-style: italic;
+}
+
+
+form input:hover, form textarea:hover {
+    border-color: #8b5cf6;
+}
+
+
 .rating-box {
 
     display: flex;
@@ -148,7 +246,7 @@ form input[type="submit"]:hover {
     font-weight: bolder;
 }
 
-/* Footer */
+
 footer {
     text-align: center;
     padding: 20px;
