@@ -9,14 +9,17 @@ body {
 }
 
 h1 {
+    margin: 0;
+    padding: 50px 0 15px;
     font-size: 45px;
     text-align: center;
-    color: #ffffff;
+    
 }
 
 p {
+    font-weight: 500;
+    font-size: 20px;
     text-align: center;
-    color: #ffffff;
 }
 
 .header-list a {
@@ -29,10 +32,9 @@ p {
 
 /* Header styling */
 .header {
-    background-color: #8b5cf6;
+    background-color: #1c0de7;
     color: rgb(233, 233, 233);
     text-align: center;
-    padding: 5px;
     font-size: 12px;
 }
 
@@ -40,8 +42,8 @@ p {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(107, 107, 107);
-    padding: 15px 30px;
+    background-color: rgb(93, 243, 24);
+    padding: 0 30px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
@@ -117,8 +119,9 @@ p {
     white-space: nowrap;
 }
 
+
 .room-components, .component-of-service {
-    background: rgb(94, 94, 94);
+    background: rgba(233, 180, 7, 0.521);
     padding: 10px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
@@ -140,8 +143,9 @@ p {
 }
 
 .about-us-subdiv {
+    padding-bottom: 100px;
     align-content: space-between;
-    margin: 8px;
+    margin: 0 100px;
 }
 
 .about-us-image {
@@ -149,9 +153,12 @@ p {
 }
 
 .about-us-p {
-    float: left;
-    padding: 8px;
+    float: right;
+    padding: 8px 28px;
     width: 60%;
+}
+.about-us-p p {
+    text-align: left;
 }
 
 .rooms-image, .img-service {
@@ -163,21 +170,29 @@ p {
 
 .title {
     font-size: 15px;
-    color: #f8f8f8;
-    margin-top: 10px;
+    color: #270d0ee5;
 }
 
 /* Sections styling */
-.intro, .about-us, .services, .Hotel-team, .list-room, .contact-us, .guest-rate {
+.intro, .list-room, .Hotel-team, .guest-rate {
     padding: 50px 10%;
-    background-color: rgb(145, 145, 145);
-    margin: 20px 0;
-    border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff !important;
+    margin:0;
+    
+    
+}
+.about-us, .services, .contact-us {
+    margin: 0;
+    background-color: #f8f9fa !important; 
 }
 
 .Hotel-team {
     text-align: center;
+}
+
+.Hotel-team h1 {
+    padding-top: 20px !important;
+    color: black;
 }
 
 .team-img {
@@ -193,12 +208,17 @@ p {
     border: 3px solid #8b5cf6;
 }
 
+.contact-form {
+    padding-top: 30px;
+    padding-bottom: 70px;
+}
+
 form {
     align-items: center;
     display: flex;
     flex-direction: column;
     gap: 8px;
-    background: rgb(160, 160, 160);
+    background: rgb(248, 247, 252);;
     padding: 30px;
     border-radius: 15px;
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
@@ -212,8 +232,6 @@ form input, form textarea {
     border-radius: 8px;
     font-size: 16px;
     transition: border-color 0.3s ease, box-shadow 0.3s ease;
-    background-color: #999;
-    color: aliceblue;
 }
 
 form input:focus, form textarea:focus {
@@ -251,7 +269,6 @@ form label {
 }
 
 form input::placeholder, form textarea::placeholder {
-    color: #e9e9e9;
     font-style: italic;
     opacity:50%;
 }
@@ -265,7 +282,7 @@ form input:hover, form textarea:hover {
     display: flex;
     text-align: center;
     padding: 8px 10%;
-    background-color: rgb(164, 164, 164);
+    background-color: rgb(242, 245, 227);
     margin: 10px 0;
     border-radius: 10px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
@@ -296,7 +313,16 @@ footer {
     background-color: #333;
     color: white;
 }
-
+@media (min-width: 769px) {
+    .contact-form {
+        display: grid;
+        place-items: center;
+    }
+    .sub-services {
+        margin-left: 90px;
+        margin-right: 90px;
+    }
+}
 
 @media (max-width: 768px) {
     body {
@@ -382,6 +408,14 @@ footer {
         flex-direction: column;
         align-items: center;
         text-align: center;
+    }
+    .about-us-image, .about-us-p {
+        float: left;
+        text-align: center;
+    }
+    .about-us-p {
+        padding-left: 0;
+        padding-right: 0;
     }
 }
 
