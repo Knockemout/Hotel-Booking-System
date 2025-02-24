@@ -32,17 +32,20 @@ p {
 
 /* Header styling */
 .header {
-    background-color: #1c0de7;
+    background-color: #5CB338;
     color: rgb(233, 233, 233);
     text-align: center;
     font-size: 12px;
+}
+.header h1 {
+    padding: 15px 0;
 }
 
 .headers {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(93, 243, 24);
+    background-color: #5CB338;
     padding: 0 30px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
@@ -81,11 +84,11 @@ p {
 }
 
 .header-list h1:hover {
-    color: #8b5cf6;
+    color: #A31D1D;
 }
 
 .sub-header button {
-    background-color: #8b5cf6;
+    background-color: #2C3930;
     color: white;
     padding: 10px 20px;
     border: none;
@@ -102,7 +105,7 @@ p {
 }
 
 .sub-header button:hover {
-    background-color: #6a46c1;
+    background-color: #854836;
 }
 
 .list-room, .services {
@@ -121,7 +124,7 @@ p {
 
 
 .room-components, .component-of-service {
-    background: rgba(233, 180, 7, 0.521);
+    background: #EEEEEE;
     padding: 10px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
@@ -246,7 +249,7 @@ form textarea {
 }
 
 form input[type="submit"] {
-    background-color: #8b5cf6;
+    background-color: #347928;
     width: 30%;
     color: white;
     border: none;
@@ -258,7 +261,7 @@ form input[type="submit"] {
 }
 
 form input[type="submit"]:hover {
-    background-color: #6a46c1;
+    background-color: #8FD14F;
     transform: translateY(-2px);
 }
 
@@ -306,11 +309,24 @@ form input:hover, form textarea:hover {
     font-size: 15px;
     font-weight: bolder;
 }
+#topBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px;
+    font-size: 24px;
+    border: none;
+    border-radius: 50%;
+    background: #333;
+    color: white;
+    cursor: pointer;
+    display: none; /* Initially hidden */
+}
 
 footer {
     text-align: center;
     padding: 20px;
-    background-color: #333;
+    background-color: #5CB338;
     color: white;
 }
 @media (min-width: 769px) {

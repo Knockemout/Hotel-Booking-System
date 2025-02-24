@@ -15,30 +15,34 @@
         </div>
     </div>
      <div class="container"><div class="sub-container"><h2>Book a Hotel Room</h2>
-    <form id="bookingForm">
+    <form id="bookingForm" action="booking.php" method="post">
         <label for="">name :</label> 
-        <input type="text" placeholder="your name...">
-        <label for="email">Email</label><input type="email" placeholder="eg. mesfin@ayele.com">
-        <label for="phone-number">Phone</label><input type="tel" placeholder="eg. 0911132343">
+        <input type="text" placeholder="your name..." name="fullname">
+        <label for="email">Email</label>
+        <input type="email" placeholder="eg. mesfin@ayele.com" name="email">
+        <label for="phone-number">Phone</label>
+        <input type="tel" placeholder="eg. 0911132343" name="phone_number">
         
         <label for="roomType">Room Type:</label>
         
         <select id="roomType" onchange="updateAvailability()">
-            <option value="Presidential">Presidential Suite</option>
-            <option value="Executive">Executive Room</option>
-            <option value="Suite">Suite</option>
-            <option value="Family">Family Room</option>
-            <option value="Deluxe">Deluxe Room</option>
-            <option value="Standard">Standard Room</option>
+            <option value="Presidential" name="roomType">Presidential Suite</option>
+            <option value="Executive" name="roomType">Executive Room</option>
+            <option value="Suite" name="roomType">Suite</option>
+            <option value="Family" name="roomType">Family Room</option>
+            <option value="Deluxe" name="roomType">Deluxe Room</option>
+            <option value="Standard" name="roomType">Standard Room</option>
         </select>
         
         <label for="numRooms">Number of Rooms:</label>
-        <input type="number" id="numRooms"  value="1" onchange="checkAvailability()">
+        <input type="number" id="numRooms"  value="1" onchange="checkAvailability()" name="numRooms">
         
         <label for="numPersons">Number of Persons:</label>
-        <input type="number" id="numPersons" min="1" value="1">
-      <label for="check-in">Check in</label><input type="date">
-      <label for="check-out">check out</label><input type="date">
+        <input type="number" id="numPersons" min="1" value="1" name="numPersons">
+        <label for="check-in">Check in</label>
+        <input type="date" name="ckeck_in">
+        <label for="check-out">check out</label>
+        <input type="date" name="check_out">
         
         <p id="availability"></p>
         

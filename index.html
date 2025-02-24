@@ -186,6 +186,7 @@
         </div>
        </div>
     </div>
+    <button id="topBtn" onclick="scrollToTop()">⬆️</button>
 
     <footer>
         <div></div>
@@ -197,6 +198,19 @@
     <script>
         function toggleMenu() {
             document.querySelector('.header-list').classList.toggle('active');
+        }
+
+        const topButton = document.getElementById('topBtn');
+
+        window.onscroll = function () {
+            if (window.scrollY > 300) {
+                topButton.style.display = 'block';
+            } else {
+                topButton.style.display = 'none';
+            }
+        };
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
         }
     </script>
 </body>

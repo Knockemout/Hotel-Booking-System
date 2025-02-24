@@ -41,16 +41,21 @@ p {
 
 /* Header styling */
 .header {
-    background-color: #8b5cf6;
+    background-color: #5CB338;
     color: rgb(233, 233, 233);
     text-align: center;
     padding: 5px;
     font-size: 12px;
 }
 
+.header button {
+    background-color: #213555;
+    padding-right: 12px;
+}
+
 input, select, button ,textarea{
     width: 100%;
-    padding: 12px;
+    padding: 12px 0 12px 12px;
     margin: 10px 0;
     border: 1px solid #ccc;
     border-radius: 6px;
@@ -58,7 +63,7 @@ input, select, button ,textarea{
 }
 
 button {
-    background: #4e4434;
+    background: #5CB338;
     color: white;
     font-size: 18px;
     cursor: pointer;
@@ -67,5 +72,5 @@ button {
 }
 
 button:hover {
-    background: #d35400;
+    background: #3A7D44;
 }
