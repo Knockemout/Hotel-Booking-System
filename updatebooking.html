@@ -13,13 +13,8 @@
             <button type="button">Back to Home</button>
         </div>
     </div>
-     <div class="container"><div class="sub-container"><h2>Book a Hotel Room</h2>
-       <div class="header"><h2>🔥 Book Now, Enjoy Exclusive Savings</h2><br>
-        <h1>Luxury Hotel</h1>
-        <div class="back-button">
-            <button type="button">Back to Home</button>
-        </div>
-    </div>
+     
+   
      <div class="container"><div class="updating-book"><form id="manageBookingForm">
         <h2>Manage Your Booking</h2>
         
@@ -70,7 +65,9 @@
 
     <label for="cancelBookingId">Booking ID:</label>
     <input type="text" id="cancelBookingId" placeholder="Enter your booking ID" required>
-
+  <input type="radio" name="all" id="all" value="all" ><label for="all">cancel all</label>
+  <input type="radio" name="all" id="partial" value="partial"><label for="all">cancel partial</label>
+  
     <label for="cancelRoomType">Room Type:</label>
     <select id="cancelRoomType">
         <option value="Presidential">Presidential Suite</option>
