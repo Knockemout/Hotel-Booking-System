@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style sheet/booking.css">
+    <title>update Booking</title>
+</head>
+<body>
+    <div class="header"><h2>🔥 Book Now, Enjoy Exclusive Savings</h2><br>
+        <h1>Luxury Hotel</h1>
+        <div class="back-button">
+            <button type="button">Back to Home</button>
+        </div>
+    </div>
+     <div class="container"><div class="sub-container"><h2>Book a Hotel Room</h2>
+       <div class="header"><h2>🔥 Book Now, Enjoy Exclusive Savings</h2><br>
+        <h1>Luxury Hotel</h1>
+        <div class="back-button">
+            <button type="button">Back to Home</button>
+        </div>
+    </div>
+     <div class="container"><div class="updating-book"><form id="manageBookingForm">
+        <h2>Manage Your Booking</h2>
+        
+        <label for="bookingId">Booking ID:</label>
+        <input type="text" id="bookingId" placeholder="Enter your booking ID" required>
+        
+        <label for="updateName">Name:</label>
+        <input type="text" id="updateName" placeholder="Your name...">
+        
+        <label for="updateEmail">Email:</label>
+        <input type="email" id="updateEmail" placeholder="eg. mesfin@ayele.com">
+        
+        <label for="updatePhone">Phone:</label>
+        <input type="tel" id="updatePhone" placeholder="eg. 0911132343">
+        
+        <label for="updateRoomType">Room Type:</label>
+        <select id="updateRoomType">
+            <option value="Presidential">Presidential Suite</option>
+            <option value="Executive">Executive Room</option>
+            <option value="Suite">Suite</option>
+            <option value="Family">Family Room</option>
+            <option value="Deluxe">Deluxe Room</option>
+            <option value="Standard">Standard Room</option>
+        </select>
+        
+        <label for="updateNumRooms">Number of Rooms:</label>
+        <input type="number" id="updateNumRooms" value="1">
+        
+        <label for="updateNumPersons">Number of Persons:</label>
+        <input type="number" id="updateNumPersons" min="1" value="1">
+        
+        <label for="updateCheckIn">Check-in Date:</label>
+        <input type="date" id="updateCheckIn">
+        
+        <label for="updateCheckOut">Check-out Date:</label>
+        <input type="date" id="updateCheckOut">
+        
+        <button type="submit">Update Booking</button>
+        
+    </form>
+    
+        
+        
+    </div>
+<div class="book-cancelation">
+    <form id="cancelBookingForm">
+    <h2>Cancel Your Booking</h2>
+
+    <label for="cancelBookingId">Booking ID:</label>
+    <input type="text" id="cancelBookingId" placeholder="Enter your booking ID" required>
+
+    <label for="cancelRoomType">Room Type:</label>
+    <select id="cancelRoomType">
+        <option value="Presidential">Presidential Suite</option>
+        <option value="Executive">Executive Room</option>
+        <option value="Suite">Suite</option>
+        <option value="Family">Family Room</option>
+        <option value="Deluxe">Deluxe Room</option>
+        <option value="Standard">Standard Room</option>
+    </select>
+
+    <label for="totalRooms">Total Rooms Booked:</label>
+    <input type="number" id="totalRooms" value="3" disabled>
+
+    <label for="cancelNumRooms">Number of Rooms to Cancel:</label>
+    <input type="number" id="cancelNumRooms" min="1" max="3" value="1">
+
+    <button type="submit">Cancel Selected Rooms</button>
+</form></div></div>
+    
+    <footer>
+        <div></div>
+        <div></div>
+        <div></div>
+        
+<p>2025 &copy;Copy right Reserved, Luxury Hotel</p>
+    </footer></div></div>
+    
+    <footer>
+        <div></div>
+        <div></div>
+        <div></div>
+        
+<p>2025 &copy;Copy right Reserved, Luxury Hotel</p>
+    </footer>
+</body>
+</html>
