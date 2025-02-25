@@ -282,6 +282,7 @@ form input:hover, form textarea:hover {
 
 /* Rating box styling */
 .rating-box {
+    width: 30%;
     display: flex;
     text-align: center;
     padding: 8px 10%;
@@ -302,10 +303,12 @@ form input:hover, form textarea:hover {
 .guest-profile, .comment {
     float: inline-end;
     padding: 8px;
-    font-size: 15px;
+    font-size: 25px;
+    text-align: left !important;
 }
 
 .guest-profile h1 {
+    padding: 15px;
     font-size: 15px;
     font-weight: bolder;
 }
@@ -320,7 +323,7 @@ form input:hover, form textarea:hover {
     background: #333;
     color: white;
     cursor: pointer;
-    display: none; /* Initially hidden */
+    display: none; 
 }
 
 footer {
