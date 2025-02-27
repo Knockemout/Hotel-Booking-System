@@ -17,7 +17,7 @@ The **Hotel Booking System** is a comprehensive web-based application designed t
 - **Guest Records** – Maintain customer information for better service.
 
 ## Technologies Used
-- **Frontend:** HTML, CSS, JavaScript (React/Angular/Vue)
+- **Frontend:** HTML, CSS, JavaScript
 - **Backend:** PHP
 - **Database:** MySQL
 
@@ -40,9 +40,3 @@ The **Hotel Booking System** is a comprehensive web-based application designed t
 - **Mesfin Ayele Wake(0732/15)**
 - **Dawit  Mengesha Beriso(0299/15)**
 - **Kidist Teshome Asefa(0620/15)**
-
-## Future Improvements
-- **AI-based Room Recommendation System**
-- **Multi-language Support**
-- **Mobile App Version**
-
