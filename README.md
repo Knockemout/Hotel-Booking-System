@@ -35,10 +35,11 @@ The **Hotel Booking System** is a comprehensive web-based application designed t
 5. **Run the Application:**
 
 ## Team Members
-- **[Member 1 Name]**
-- **[Member 2 Name]**
-- **[Member 3 Name]**
-- **[Member 4 Name]**
+- **Kenean Dita Meleta(0629/15)**
+- **Atinaf Bedasa Debela(0176/15)**
+- **Mesfin Ayele Wake(0732/15)**
+- **Dawit  Mengesha Beriso(0299/15)**
+- **Kidist Teshome Asefa(0620/15)**
 
 ## Future Improvements
 - **AI-based Room Recommendation System**
